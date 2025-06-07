@@ -7,6 +7,7 @@ yarn-error.log
 # MongoDB
 mongodb-*
 *.tgz
+*.tar.gz
 
 # Environment variables
 .env
@@ -25,12 +26,19 @@ mongodb-*
 .DS_Store
 Thumbs.db
 
-# Testing
-/coverage
-
-# Production
+# Build
 /build
 /dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+/coverage
 
 # Misc
 .env.local

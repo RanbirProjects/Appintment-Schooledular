@@ -1,44 +1,33 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import CalendarView from './pages/CalendarView';
 import AppointmentForm from './pages/AppointmentForm';
 import AppointmentList from './pages/AppointmentList';
-import CalendarView from './pages/CalendarView';
-import Calendar from './components/Calendar';
+import PrivateRoute from './components/PrivateRoute';
 import './App.css';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#667eea',
-    },
-    secondary: {
-      main: '#764ba2',
-    },
-  },
-  typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-  },
-});
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/create" element={<AppointmentForm />} />
-            <Route path="/appointments" element={<AppointmentList />} />
-            <Route path="/calendar" element={<CalendarView />} />
-            <Route path="/calendar-component" element={<Calendar />} />
-          </Routes>
-        </div>
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+          <Route path="/calendar" element={<PrivateRoute><CalendarView /></PrivateRoute>} />
+          <Route path="/appointments/new" element={<PrivateRoute><AppointmentForm /></PrivateRoute>} />
+          <Route path="/appointments" element={<PrivateRoute><AppointmentList /></PrivateRoute>} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

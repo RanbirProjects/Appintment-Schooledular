@@ -1,8 +1,17 @@
 # Appointment Scheduler
 
 A full-stack web application for managing appointments with a beautiful calendar interface and real-time updates.
+Welcome page
+![Image 08-06-25 at 9 49 AM](https://github.com/user-attachments/assets/5ec0fba9-82da-4b12-bc7a-0bea6e99e04b)
 
-## 🌟 Features
+Login page
+![Image 08-06-25 at 9 49 AM](https://github.com/user-attachments/assets/d6236892-7016-4a32-a645-e783eea67ba4)
+Registration page
+![Image 08-06-25 at 9 49 AM](https://github.com/user-attachments/assets/937888e2-a9bf-4b7e-aaa6-314ed13bf50d)
+
+
+
+ 🌟 Features
 
 - User authentication (Register/Login)
 - Interactive calendar view
@@ -12,9 +21,9 @@ A full-stack web application for managing appointments with a beautiful calendar
 - MongoDB database integration
 - RESTful API architecture
 
-## 🚀 Tech Stack
+🚀 Tech Stack
 
-### Frontend
+ Frontend
 - React.js
 - Material-UI
 - React Router
@@ -22,7 +31,7 @@ A full-stack web application for managing appointments with a beautiful calendar
 - Styled Components
 - Framer Motion (for animations)
 
-### Backend
+ Backend
 - Node.js
 - Express.js
 - MongoDB
@@ -30,13 +39,13 @@ A full-stack web application for managing appointments with a beautiful calendar
 - JWT Authentication
 - Bcrypt for password hashing
 
-## 📋 Prerequisites
+ 📋 Prerequisites
 
 - Node.js (v14 or higher)
 - MongoDB Atlas account
 - npm or yarn package manager
 
-## 🔧 Installation
+ 🔧 Installation
 
 1. Clone the repository:
 ```bash
@@ -63,7 +72,7 @@ MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
-## 🏃‍♂️ Running the Application
+🏃‍♂️ Running the Application
 
 1. Start the backend server:
 ```bash
@@ -81,13 +90,13 @@ The application will be available at:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:5001
 
-## 🌐 Deployment
+🌐 Deployment
 
 The application is deployed on:
 - Frontend: [Netlify](https://appointment98.netlify.app)
 - Backend: [Render](https://appointment-scheduler-api.onrender.com)
 
-## 📁 Project Structure
+📁 Project Structure
 
 ```
 Appointment-Scheduler/
@@ -108,20 +117,20 @@ Appointment-Scheduler/
     └── server.js
 ```
 
-## 🔐 API Endpoints
+🔐 API Endpoints
 
-### Authentication
+Authentication
 - POST /api/users/register - Register a new user
 - POST /api/users/login - Login user
 - GET /api/users/profile - Get user profile
 
-### Appointments
+ Appointments
 - GET /api/appointments - Get all appointments
 - POST /api/appointments - Create new appointment
 - PUT /api/appointments/:id - Update appointment
 - DELETE /api/appointments/:id - Delete appointment
 
-## 🤝 Contributing
+🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -129,16 +138,15 @@ Appointment-Scheduler/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Author
+👥 Author
 
 Ranbir Singh
 - GitHub: [@RanbirProjects](https://github.com/RanbirProjects)
-
-## 🙏 Acknowledgments
+🙏 Acknowledgments
 
 - Material-UI for the beautiful components
 - MongoDB Atlas for the database hosting

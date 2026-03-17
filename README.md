@@ -1,156 +1,99 @@
-# Appointment Scheduler
+# 🚀 Appointment Scheduler  
 
 A full-stack web application for managing appointments with a beautiful calendar interface and real-time updates.
-Welcome page
-![Image 08-06-25 at 9 49 AM](https://github.com/user-attachments/assets/5ec0fba9-82da-4b12-bc7a-0bea6e99e04b)
 
-Login page
-![Image 08-06-25 at 9 49 AM](https://github.com/user-attachments/assets/d6236892-7016-4a32-a645-e783eea67ba4)
-Registration page
-![Image 08-06-25 at 9 49 AM](https://github.com/user-attachments/assets/937888e2-a9bf-4b7e-aaa6-314ed13bf50d)
+---
+
+## 🖼️ Preview  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5ec0fba9-82da-4b12-bc7a-0bea6e99e04b" width="700"/>
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/d6236892-7016-4a32-a645-e783eea67ba4" width="700"/>
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/937888e2-a9bf-4b7e-aaa6-314ed13bf50d" width="700"/>
+</p>
+
+---
+
+## 🌟 Features  
+
+- 🔐 Authentication (Register/Login)  
+- 📅 Calendar-based scheduling  
+- ⚡ Real-time updates  
+- 📱 Responsive UI  
+- 🔗 REST API  
+- 🗄 MongoDB Integration  
+
+---
+
+## 🚀 Tech Stack  
+
+**Frontend:** React.js, Material UI, Axios, Framer Motion  
+**Backend:** Node.js, Express.js, MongoDB, JWT, Bcrypt  
+
+```bash
+📦 Appointment-Scheduler
+ ┣ 📂 frontend
+ ┃ ┣ 📂 public
+ ┃ ┗ 📂 src
+ ┃    ┣ 📂 components
+ ┃    ┣ 📂 pages
+ ┃    ┣ 📂 context
+ ┃    ┣ 📂 utils
+ ┃    ┗ 📄 App.js
+ ┃
+ ┣ 📂 backend
+ ┃ ┣ 📂 config
+ ┃ ┣ 📂 controllers
+ ┃ ┣ 📂 middleware
+ ┃ ┣ 📂 models
+ ┃ ┣ 📂 routes
+ ┃ ┗ 📄 server.js
+ ┃
+ ┗ 📄 README.md
+```
 
 
+---
 
- 🌟 Features
+## ⚙️ Setup  
 
-- User authentication (Register/Login)
-- Interactive calendar view
-- Appointment scheduling and management
-- Real-time updates
-- Responsive design
-- MongoDB database integration
-- RESTful API architecture
-
-🚀 Tech Stack
-
- Frontend
-- React.js
-- Material-UI
-- React Router
-- Axios
-- Styled Components
-- Framer Motion (for animations)
-
- Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-- Bcrypt for password hashing
-
- 📋 Prerequisites
-
-- Node.js (v14 or higher)
-- MongoDB Atlas account
-- npm or yarn package manager
-
- 🔧 Installation
-
-1. Clone the repository:
 ```bash
 git clone https://github.com/RanbirProjects/Appintment-Schooledular.git
 cd Appointment-Scheduler
-```
+cd frontend && npm install
+cd ../backend && npm install
 
-2. Install frontend dependencies:
-```bash
-cd frontend
-npm install
-```
+Create .env:
 
-3. Install backend dependencies:
-```bash
-cd ../backend
-npm install
-```
-
-4. Create a `.env` file in the backend directory with the following variables:
-```
 PORT=5001
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-```
+▶️ Run
+cd backend && npm run server
+cd frontend && npm start
 
-🏃‍♂️ Running the Application
+🌐 http://localhost:3000
 
-1. Start the backend server:
-```bash
-cd backend
-npm run server
-```
+🌐 Live
 
-2. Start the frontend development server:
-```bash
-cd frontend
-npm start
-```
+Frontend: https://appointment98.netlify.app
 
-The application will be available at:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:5001
+Backend: https://appointment-scheduler-api.onrender.com
 
-🌐 Deployment
+🔐 API
 
-The application is deployed on:
-- Frontend: [Netlify](https://appointment98.netlify.app)
-- Backend: [Render](https://appointment-scheduler-api.onrender.com)
+POST /api/users/register
+POST /api/users/login
+GET /api/users/profile
 
-📁 Project Structure
+GET /api/appointments
+POST /api/appointments
+PUT /api/appointments/:id
+DELETE /api/appointments/:id
 
-```
-Appointment-Scheduler/
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── context/
-│       ├── utils/
-│       └── App.js
-└── backend/
-    ├── config/
-    ├── controllers/
-    ├── middleware/
-    ├── models/
-    ├── routes/
-    └── server.js
-```
-
-🔐 API Endpoints
-
-Authentication
-- POST /api/users/register - Register a new user
-- POST /api/users/login - Login user
-- GET /api/users/profile - Get user profile
-
- Appointments
-- GET /api/appointments - Get all appointments
-- POST /api/appointments - Create new appointment
-- PUT /api/appointments/:id - Update appointment
-- DELETE /api/appointments/:id - Delete appointment
-
-🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👥 Author
+👨‍💻 Author
 
 Ranbir Singh
-- GitHub: [@RanbirProjects](https://github.com/RanbirProjects)
-🙏 Acknowledgments
-
-- Material-UI for the beautiful components
-- MongoDB Atlas for the database hosting
-- Netlify for frontend hosting
-- Render for backend hosting
-
-
+🔗 https://github.com/RanbirProjects
